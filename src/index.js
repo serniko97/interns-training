@@ -1,13 +1,9 @@
 function hello(name)
 {
-    let output = "Hello ";
-
     if(name)
-        output += name + "!";
+        return `Hello ${name}!`;
     else
-        output += "world!";
-
-    return output;
+        return `Hello world!`;
 }
 
 exports.say = hello;
